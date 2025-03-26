@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bose R - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: white;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease-in-out;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        header:hover {
+            background: linear-gradient(90deg, #ff4b2b, #ff416c);
+            letter-spacing: 2px;
+        }
+
+        /* Profile Section */
+        .profile {
+            text-align: center;
+            padding: 50px 0;
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 6px solid #ff416c;
+            transition: transform 0.4s ease, box-shadow 0.3s ease;
+        }
+
+        .profile img:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0px 0px 25px rgba(255, 65, 108, 0.8);
+        }
+
+        /* Sections */
+        section {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(255, 65, 108, 0.5);
+            animation: fadeIn 2s ease-in-out;
+            transition: transform 0.3s ease-in-out, background 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        h2 {
+            color: #ff416c;
+            font-size: 2.2em;
+            border-bottom: 3px solid #ff416c;
+            display: inline-block;
+            padding-bottom: 5px;
+            transition: 0.3s;
+        }
+
+        h2:hover {
+            color: #ffea00;
+            border-color: #ffea00;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2em;
+        }
+
+        ul li {
+            padding: 10px 0;
+            position: relative;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: translateX(15px);
+            color: #ffea00;
+        }
+
+        /* Resume Button */
+        .resume-btn {
+            background: #ff416c;
+            padding: 15px 30px;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out, transform 0.3s;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .resume-btn:hover {
+            background: #ff9800;
+            transform: scale(1.1);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            animation: slideUp 1s ease-in-out;
+            transition: 0.3s;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+            color: #ffea00;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SHANMUGAM</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="profile">
+            <img src="photo.jpg" alt="Bose R">
+            <p><strong>About Me:</strong> I am a second-year BSc IT student passionate about Ethical Hacking and Film Editing.</p>
+        </div>
+
+        <section>
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Information Technology (BSc IT)</strong></p>
+            <p>Vasavi College, Erode (Self Finance Wing) | Batch: 2023-2026</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>✔ Basic Computer Knowledge</li>
+                <li>✔ Programming: C, C++, Java</li>
+                <li>✔ Linux Basics</li>
+                <li>✔ Effective use of AI tools like ChatGPT</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Completed:</strong></li>
+                <li>✔ Digital Portfolio (This Website)</li>
+                <li>✔ Python Data Analysis - Data Visualization & Analytics Project</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certifications & Achievements</h2>
+            <ul>
+                <li>✔ IBM Certified Cloud Course</li>
+                <li>✔ Completed Basic Computer Course</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Resume</h2>
+            <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+        </section>
+
+    </div>
+
+    <footer class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:vsserd16@gmail.com">vsserd16@gmail.com</a></p>
+        <p>Phone: <a href="tel:+9l93856 40331">+91 93856 40331</a></p>
+    </footer>
+
+</body>
+</html>
